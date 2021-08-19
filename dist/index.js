@@ -48,3 +48,10 @@ const user1 = {
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
+// Classes
+// class Person {
+//   id: number;
+//   name: string;
+//   constructor(){
+//   }
+// }

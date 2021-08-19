@@ -84,3 +84,13 @@ interface MathFunc {
 
 const add: MathFunc = (x: number, y: number) => x + y;
 const sub: MathFunc = (x: number, y: number) => x - y;
+
+// Classes
+
+// class Person {
+//   id: number;
+//   name: string;
+//   constructor(){
+
+//   }
+// }
