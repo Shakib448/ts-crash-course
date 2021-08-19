@@ -70,6 +70,7 @@ function log(message: string | number): void {
 interface UserInterface {
   id: number;
   name: string;
+  age?: number; // Optional ? if this included or not
 }
 
 const user1: UserInterface = {
