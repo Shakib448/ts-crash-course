@@ -1,3 +1,5 @@
-let id: number = 5;
+// Basic types
 
-console.log(id);
+let id: number = 5;
+let company: string = "Shakib";
+let isPublished: boolean = true;
