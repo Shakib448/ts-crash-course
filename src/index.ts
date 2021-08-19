@@ -64,3 +64,15 @@ function addNum(x: number, y: number): number {
 function log(message: string | number): void {
   console.log(message);
 }
+
+// Interfaces
+// Objects
+interface UserInterface {
+  id: number;
+  name: string;
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
