@@ -30,10 +30,26 @@ pid = "22";
 
 // Enum
 enum Direction1 {
-  Up,
+  Up = 1,
   Down,
   Left,
   Right,
 }
 
-console.log(Direction1.Up);
+// Objects
+type User = {
+  id: number;
+  name: string;
+};
+
+const user: User = {
+  id: 1,
+  name: "John",
+};
+
+// Type Assertion
+
+let cid: any = 1;
+
+// let customerId = <number>cid;
+let customerId = cid as number;
