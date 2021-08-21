@@ -120,7 +120,7 @@ class Employee extends Person {
 }
 
 const emp = new Employee(3, "Mike", "Developer");
-console.log(emp.register());
+// console.log(emp.register());
 
 // Generics
 
@@ -132,3 +132,12 @@ let numArray = getArray<number>([1, 2, 3, 4]);
 let strArray = getArray<string>(["Mike", "Shakib", "Mili"]);
 
 strArray.push("hello");
+
+function factorial(n: number): number {
+  if (n > 1) {
+    return n * factorial(n - 1);
+  }
+  return 1;
+}
+
+console.log(factorial(4));
