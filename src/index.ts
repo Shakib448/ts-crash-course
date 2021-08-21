@@ -108,4 +108,27 @@ class Person implements PersonInterface {
 
 const shakib = new Person(1, "Shakib");
 const mike = new Person(2, "Mike");
-console.log(shakib.register());
+
+// Sub classes
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name);
+    this.position = position;
+  }
+}
+
+const emp = new Employee(3, "Mike", "Developer");
+console.log(emp.register());
+
+// Generics
+
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(["Mike", "Shakib", "Mili"]);
+
+strArray.push("hello");
