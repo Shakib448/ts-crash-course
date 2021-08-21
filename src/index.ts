@@ -87,10 +87,14 @@ const sub: MathFunc = (x: number, y: number) => x - y;
 
 // Classes
 
-// class Person {
-//   id: number;
-//   name: string;
-//   constructor(){
+class Person {
+  id: number;
+  name: string;
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
+}
 
-//   }
-// }
+const shakib = new Person(1, "Shakib");
+const mike = new Person(2, "Mike");
